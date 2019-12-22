@@ -1,0 +1,121 @@
+:root {
+    --color-1: rgb(59, 59, 152);
+    --color-2: #23235b;
+    --color-3: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-1);
+    display: flex;
+    color: white;
+    font-family: arial;
+}
+
+.container {
+    margin: auto;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px black;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+/* display */
+
+.container .display {
+    padding: 1rem;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.container .display input {
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    cursor: not-allowed;
+    width: 70%;
+    height: 20px;
+    word-break: break-all;
+    /* font-weight: 4rem; */
+}
+
+.container .display button {
+    background-color: var(--color-1);
+    color: white;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    /* width: 20px; */
+    /* height: 20px; */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+}
+
+.container .display button:hover {
+    background-color: rgba(59, 59, 152, 0.7);
+    cursor: copy;
+}
+
+/* form */
+
+.container form {
+    display: grid;
+    grid-template-columns: 7px auto auto 7px;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.7rem;
+    /* align-items: space-between;
+    justify-content: space-between; */
+}
+
+.container form label {
+    font-weight: bold;
+    cursor: pointer;
+    grid-column-start: 2;
+}
+
+.container form input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.container form input[type="number"] {
+    width: 2.5rem;
+}
+
+.container form button {
+    grid-column: span 2;
+    padding: 1rem;
+    color: white;
+    background-color: var(--color-1);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    grid-column: 1/-1; 
+    /* padding: 4rem auto; */
+}
+
+.container form button:hover {
+    background-color: rgba(59, 59, 152, 0.7);
+}
