@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Password Generator</h1>
         <div class="display">
-            <input type="text" value="password" name="password-display"/>
+            <input maxlength="50" type="text" value="password" name="password-display"/>
             <button type="button" class="clip-board">copy</button>
         </div>
         <form>
@@ -25,7 +25,7 @@
             <input id="include-numbers" type="checkbox"/>
             <label for="include-symbols">Inlude symbols letters</label>
             <input id="include-symbols" type="checkbox"/>
-            <button type="submit">Generate password</button>
+            <button id="generate-button" type="submit">Generate password</button>
         </form>
     </div>
 </body>

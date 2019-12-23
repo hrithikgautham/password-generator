@@ -52,8 +52,9 @@ body {
     outline: none;
     cursor: not-allowed;
     width: 70%;
-    height: 20px;
+    height: 1rem;
     word-break: break-all;
+    /* user-select: none; */
     /* font-weight: 4rem; */
 }
 
